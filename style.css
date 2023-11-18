@@ -33,6 +33,6 @@ body {
 
 .gridBtn {
     flex:1;
-    min-height: 20px; /* Adjust the height as needed */
+    min-height: 20px;
   min-width: 20px; 
 }
