@@ -1,0 +1,38 @@
+body {
+    display:flex;
+    justify-content: center;
+    height: 100vh;
+    gap: 5px;
+    background-color: #2b2b2b;
+}
+
+.btnContainer {
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    margin: 20px;
+}
+
+.resetBtn, .inputBtn {
+    height: 50px;
+    width: 100px;
+    background-color: rgb(0, 170, 255);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.row {
+    display:flex;
+    justify-content: center;
+}
+
+.gridBtn {
+    flex:1;
+    min-height: 20px; /* Adjust the height as needed */
+  min-width: 20px; 
+}
