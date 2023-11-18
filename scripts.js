@@ -1,5 +1,4 @@
 const body = document.querySelector('body')
-const container = document.createElement('div')
 
 const btnContainer = document.createElement('div')
 btnContainer.classList = 'btnContainer'
@@ -35,8 +34,9 @@ inputBtn.textContent = 'New Grid'
 btnContainer.append(inputBtn)
 body.append(btnContainer)
 
+const container = document.createElement('div')
+
 container.classList = 'container'
-console.log("New script")
 function createGrid(numSquares) {
     const availableSpace = Math.min(body.clientWidth, body.clientHeight) 
     const btnSpace = Math.floor(availableSpace/numSquares)
@@ -52,7 +52,6 @@ function createGrid(numSquares) {
             btn.addEventListener('mouseover', () => {
                 btn.style.backgroundColor = '#1E90FF'
             });
-            //btn.textContent = "Button[" + i + "][" + j + "]" 
             row.append(btn)
         }
         container.append(row)
@@ -62,7 +61,3 @@ function createGrid(numSquares) {
 
 createGrid(16)
 body.append(container)
-//const row1 = document.createElement('div')
-//const row1 = document.createElement('div')
-//const row1 = document.createElement('div')
-//const row1 = document.createElement('div')
